@@ -72,7 +72,7 @@ if __name__ == "__main__":
     if len(sys.argv) != 2:
         print("Usage: uv run autolysis.py <dataset.csv>")
         sys.exit(1)
-    if AIPROXY_TOKEN in os.environ:
+    if "AIPROXY_TOKEN" in os.environ:
         AIPROXY_TOKEN = os.environ["AIPROXY_TOKEN"]
     else:
         print("set AIPROXY_TOKEN environment variable and then rerun")
